@@ -28,3 +28,5 @@ set `USERNAME` and `PASSWORD` to whatever you want. Then create a file called `c
 Some example queries are in `ref_queries.py`, to give a few examples of how to access data in the DB.
 
 Its very barebones - I haven't added anything for deleting or updating entries, so its not quite CRUD... mainly cruddy. Since half the time at work I end up adding these functions, I'll update the repo to include these soon.
+
+Requirements are `sqlalchemy` and `psycopg2` and python3. Install the libraries with `pip` etc.
