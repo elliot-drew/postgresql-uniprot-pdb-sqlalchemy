@@ -16,4 +16,15 @@ docker run --name pdb-uniprot-db \
     -d postgres
 ```
 
-set `USERNAME` and `PASSWORD` to whatever you want. As the data is not sensitive in any way I have not 
+set `USERNAME` and `PASSWORD` to whatever you want. Then create a file called `config.json` in the same directory as `base.py` and add the password and username you chose using the following format:
+
+```
+{
+"password": "PASSWORD",
+"user": "USERNAME"
+}
+```
+
+Some example queries are in `ref_queries.py`, to give a few examples of how to access data in the DB.
+
+Its very barebones - I haven't added anything for deleting or updating entries, so its not quite CRUD... mainly cruddy. Since half the time at work I end up adding these functions, I'll update the repo to include these soon.
